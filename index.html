@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Progison Team</title>
+
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=yes, initial-scale=1.0"
+        />
+        <meta charset="utf-8" />
+
+        <!-- Open Graph -->
+        <meta property="og:locale" content="en" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Progison Team - main page" />
+        <meta
+            property="og:description"
+            content="Web, game & software development"
+        />
+        <meta
+            property="og:image"
+            content="https://progison.team/res/img/pt_logo.png"
+        />
+        <meta property="og:url" content="https://progison.team" />
+        <meta property="og:site_name" content="progison.team" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            html {
+                width: 100%;
+                min-height: 100%;
+            }
+
+            body {
+                margin: 0;
+                min-width: 320px;
+                width: 100%;
+                min-height: 100%;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .top {
+                background-color: #1b0335;
+                background-image: linear-gradient(
+                    to right top,
+                    #1b0335,
+                    #3b0335
+                );
+                color: #ffffff;
+                padding: 10px 20px;
+                font-family: Righteous;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info {
+                padding-bottom: 20px;
+            }
+
+            .pt {
+                font-size: 40px;
+                width: fit-content;
+                position: relative;
+                z-index: 1;
+                margin-left: -5px;
+            }
+
+            .pt a {
+                padding: 0 5px;
+                font-size: 40px;
+                width: fit-content;
+                position: relative;
+                z-index: 1;
+                color: #ffffff;
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                outline: transparent 0px solid;
+                display: block;
+                transition: all 0.4s;
+            }
+
+            .pt a:hover,
+            .pt a:active {
+                padding: 0 5px;
+                font-size: 40px;
+                width: fit-content;
+                position: relative;
+                z-index: 1;
+                color: #ffffff;
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                outline: #ffffff 1px solid;
+                display: block;
+                transition: all 0.4s;
+            }
+
+            .pt a:focus {
+                padding: 0 5px;
+                font-size: 40px;
+                width: fit-content;
+                position: relative;
+                z-index: 1;
+                color: #ffffff;
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                outline: #4afdb5 1px solid;
+                display: block;
+                transition: all 0.4s;
+            }
+
+            .pt img {
+                width: 16px;
+                height: 16px;
+                vertical-align: super;
+            }
+
+            .description {
+                background-color: #3adb9a;
+                color: #1b0335;
+                width: fit-content;
+                padding: 0 5px;
+                margin-top: -5px;
+                margin-left: 10px;
+                position: relative;
+                z-index: 0;
+            }
+
+            .contacts {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 140px;
+            }
+
+            .contacts a {
+                display: block;
+                -webkit-tap-highlight-color: transparent;
+                outline: transparent 0px solid;
+                text-decoration: none;
+                transition: all 0.4s;
+            }
+
+            .contacts a:hover,
+            .contacts a:active {
+                display: block;
+                -webkit-tap-highlight-color: transparent;
+                outline: #fce385 1px solid;
+                text-decoration: none;
+                transform: scale(1.15);
+                transition: all 0.4s;
+            }
+
+            .contacts a:focus {
+                display: block;
+                -webkit-tap-highlight-color: transparent;
+                outline: #4afdb5 1px solid;
+                text-decoration: none;
+                transform: scale(1.15);
+                transition: all 0.4s;
+            }
+
+            .contacts img {
+                width: 40px;
+                height: 40px;
+                display: block;
+            }
+
+            .tooltip {
+                display: none;
+            }
+
+            .message {
+                margin: 20px auto;
+                margin-top: 50px;
+                padding: 10px 20px;
+                padding-bottom: 20px;
+                border-radius: 10px;
+                background-color: #1b0335;
+                background-image: linear-gradient(
+                    to right top,
+                    #2b0335,
+                    #4b0335
+                );
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .message header {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 600px) {
+                .top {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+
+            @media (min-height: 500px) {
+                .message {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    margin-top: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="top">
+            <div class="info">
+                <div class="pt">
+                    <a href="/"
+                        >Progison Team<img src="/res/img/pt_logo.svg" alt=""
+                    /></a>
+                </div>
+                <div class="description">Web, game & software development</div>
+            </div>
+
+            <div class="contacts">
+                <a target="_blank" href="https://t.me/progison">
+                    <img src="res/img/Telegram_logo.svg" alt=""
+                /></a>
+                <a target="_blank" href="https://vk.com/progison">
+                    <img src="res/img/VK_logo.svg" alt=""
+                /></a>
+                <a target="_blank" href="mailto:online24@progison.team">
+                    <img src="res/img/mail.svg" alt=""
+                /></a>
+            </div>
+        </div>
+
+        <div class="message">
+            <header>Our first project is coming soon!</header>
+            <div>We are waiting for you in the spring-summer of 2020!</div>
+        </div>
+    </body>
+</html>
