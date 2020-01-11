@@ -48,12 +48,12 @@
             }
 
             .top {
-                background-color: #550e5f;
-                background-image: linear-gradient(
+                background-color: #350e5f;
+                /* background-image: linear-gradient(
                     to right top,
                     #350e5f,
-                    #550e5f
-                );
+                    #350e5f
+                ); */
                 color: #ffffff;
                 padding: 10px 0;
                 font-family: Righteous;
@@ -124,8 +124,8 @@
             }
 
             .description {
-                background-color: #3adb9a;
-                color: #550e5f;
+                background-color: #45ffb5;
+                color: #350e5f;
                 width: fit-content;
                 padding: 0 5px;
                 margin-top: -5px;
@@ -153,7 +153,7 @@
             .contacts a:active {
                 display: block;
                 -webkit-tap-highlight-color: transparent;
-                outline: #fce385 1px solid;
+                outline: #ffdf85 1px solid;
                 text-decoration: none;
                 transform: scale(1.15);
                 transition: all 0.4s;
@@ -183,12 +183,12 @@
                 margin-top: 50px;
                 padding: 10px 20px;
                 padding-bottom: 20px;
-                background-color: #550e5f;
-                background-image: linear-gradient(
+                background-color: #350e5f;
+                /* background-image: linear-gradient(
                     to right top,
                     #350e5f,
                     #550e5f
-                );
+                ); */
                 color: #fff;
                 text-align: center;
                 font-size: 18px;
@@ -200,6 +200,10 @@
             .message header {
                 font-weight: bold;
                 margin-bottom: 20px;
+            }
+
+            .message span {
+                color: #ff6000;
             }
 
             @media (min-width: 600px) {
@@ -256,7 +260,7 @@
 
         <div class="message">
             <header>Our first project is coming soon!</header>
-            <div>We are waiting for you in the spring-summer of 2020!</div>
+            <div>We are waiting for you in the <span>spring-summer of 2020</span>!</div>
         </div>
     </body>
 </html>
