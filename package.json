@@ -1,0 +1,19 @@
+{
+  "name": "progison.team",
+  "version": "0.0.1",
+  "description": "Progison Team official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progison/progison.team.git"
+  },
+  "author": "Jury Kononenko (pt_master) <master@progison.team>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/progison/progison.team/issues"
+  },
+  "homepage": "https://github.com/progison/progison.team#readme"
+}
