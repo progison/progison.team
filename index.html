@@ -48,14 +48,14 @@
             }
 
             .top {
-                background-color: #1b0335;
+                background-color: #550e5f;
                 background-image: linear-gradient(
                     to right top,
-                    #1b0335,
-                    #3b0335
+                    #350e5f,
+                    #550e5f
                 );
                 color: #ffffff;
-                padding: 10px 20px;
+                padding: 10px 0;
                 font-family: Righteous;
                 display: flex;
                 flex-direction: column;
@@ -125,7 +125,7 @@
 
             .description {
                 background-color: #3adb9a;
-                color: #1b0335;
+                color: #550e5f;
                 width: fit-content;
                 padding: 0 5px;
                 margin-top: -5px;
@@ -183,18 +183,18 @@
                 margin-top: 50px;
                 padding: 10px 20px;
                 padding-bottom: 20px;
-                border-radius: 10px;
-                background-color: #1b0335;
+                background-color: #550e5f;
                 background-image: linear-gradient(
                     to right top,
-                    #2b0335,
-                    #4b0335
+                    #350e5f,
+                    #550e5f
                 );
                 color: #fff;
                 text-align: center;
                 font-size: 18px;
                 width: 100%;
                 max-width: 320px;
+                box-sizing: border-box;
             }
 
             .message header {
@@ -207,6 +207,12 @@
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
+                }
+            }
+
+            @media (min-width: 321px) {
+                .message {
+                    border-radius: 10px;
                 }
             }
 
@@ -227,7 +233,9 @@
             <div class="info">
                 <div class="pt">
                     <a href="/"
-                        >Progison Team<img src="/res/img/pt_logo.svg" alt=""
+                        >Progison Team<img
+                            src="/res/img/pt_white_logo.svg"
+                            alt=""
                     /></a>
                 </div>
                 <div class="description">Web, game & software development</div>
