@@ -49,10 +49,12 @@
                 font-family: "Roboto", sans-serif;
                 background-color: #1b0335;
                 font-size: 16px;
+                background-image: url(res/img/bg_pattern.svg);
+                background-size: 100px;
             }
 
             .top {
-                background-color: #350e5f;
+                /* background-color: #350e5f; */
                 color: #ffffff;
                 padding: 10px 0;
                 font-family: Righteous;
@@ -63,6 +65,8 @@
 
             .info {
                 padding-bottom: 20px;
+                justify-self: center;
+                align-self: center;
             }
 
             .pt {
@@ -100,6 +104,7 @@
                 -webkit-tap-highlight-color: transparent;
                 outline: #ffffff 1px solid;
                 display: block;
+                transform: scale(1.04);
                 transition: all 0.4s;
             }
 
@@ -111,13 +116,14 @@
 
             .description {
                 background-color: #ae63e4;
-                color: #350e5f;
+                color: #1b0335;
                 width: max-content;
                 padding: 0 5px;
                 margin-top: -5px;
                 margin-left: 10px;
                 position: relative;
                 z-index: 0;
+                box-shadow: #110022 0 0 10px;
             }
 
             .contacts {
@@ -125,6 +131,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 width: 140px;
+                border-radius: 5px;
             }
 
             .contacts a {
@@ -140,16 +147,18 @@
             .contacts a:focus {
                 display: block;
                 -webkit-tap-highlight-color: transparent;
-                outline: #ffdd40 1px solid;
+                outline: #ffe482 1px solid;
                 text-decoration: none;
                 transform: scale(1.15);
                 transition: all 0.4s;
+                border-radius: 5px;
             }
 
             .contacts img {
                 width: 40px;
                 height: 40px;
                 display: block;
+                border-radius: 5px;
             }
 
             .tooltip {
@@ -168,6 +177,7 @@
                 width: 100%;
                 max-width: 320px;
                 box-sizing: border-box;
+                box-shadow: #110022 0 0 15px;
             }
 
             .message header {
