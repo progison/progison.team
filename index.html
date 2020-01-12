@@ -250,9 +250,9 @@
         <script>
             window.addEventListener("mousemove", event => {
                 const body = document.querySelector("body");
-                const xOffset = 100 - (event.clientX / window.innerWidth) * 100;
+                const xOffset = 35 - (event.clientX / window.innerWidth) * 70;
                 const yOffset =
-                    100 - (event.clientY / window.innerHeight) * 100;
+                    35 - (event.clientY / window.innerHeight) * 70;
                 body.style.backgroundPositionX = `${xOffset *
                     0.75}px, ${xOffset * 0.85}px, ${xOffset}px`;
                 body.style.backgroundPositionY = `${yOffset *
