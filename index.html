@@ -49,9 +49,10 @@
                 font-family: "Roboto", sans-serif;
                 background-color: #1b0335;
                 font-size: 16px;
-                background-image: url(res/img/bg_pattern1.svg),
-                    url(res/img/bg_pattern2.svg), url(res/img/bg_pattern3.svg);
-                background-size: 100px;
+                background-image: url(res/img/bg_pattern3.svg),
+                    url(res/img/bg_pattern2.svg), url(res/img/bg_pattern1.svg);
+                background-size: 100px, 100px, 100px;
+                background-position: -15px -5px, -15px -5px, -15px -5px;
             }
 
             .top {
@@ -248,15 +249,38 @@
         </div>
 
         <script>
+            let sX, sY;
+            let sXOffset = -15,
+                sYOffset = -5;
+            let lastXOffset = -15,
+                lastYOffset = -5;
+
+            document
+                .querySelector("html")
+                .addEventListener("mouseleave", event => {
+                    sX = null;
+                    sY = null;
+                    sXOffset = lastXOffset;
+                    sYOffset = lastYOffset;
+                });
+
             window.addEventListener("mousemove", event => {
+                if (null == sX) {
+                    sX = event.clientX;
+                    sY = event.clientY;
+                }
+
                 const body = document.querySelector("body");
-                const xOffset = 35 - (event.clientX / window.innerWidth) * 70;
+                const xOffset =
+                    sXOffset + ((sX - event.clientX) / window.innerWidth) * 50;
                 const yOffset =
-                    35 - (event.clientY / window.innerHeight) * 70;
-                body.style.backgroundPositionX = `${xOffset *
-                    0.75}px, ${xOffset * 0.85}px, ${xOffset}px`;
-                body.style.backgroundPositionY = `${yOffset *
-                    0.75}px, ${yOffset * 0.85}px, ${yOffset}px`;
+                    sYOffset + ((sY - event.clientY) / window.innerHeight) * 50;
+                body.style.backgroundPositionX = `${xOffset}px, ${xOffset *
+                    0.85}px, ${xOffset * 0.75}px`;
+                body.style.backgroundPositionY = `${yOffset}px, ${yOffset *
+                    0.85}px, ${yOffset * 0.75}px`;
+                lastXOffset = xOffset;
+                lastYOffset = yOffset;
             });
         </script>
     </body>
