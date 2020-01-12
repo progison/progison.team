@@ -49,7 +49,8 @@
                 font-family: "Roboto", sans-serif;
                 background-color: #1b0335;
                 font-size: 16px;
-                background-image: url(res/img/bg_pattern.svg);
+                background-image: url(res/img/bg_pattern1.svg),
+                    url(res/img/bg_pattern2.svg), url(res/img/bg_pattern3.svg);
                 background-size: 100px;
             }
 
@@ -248,11 +249,14 @@
 
         <script>
             window.addEventListener("mousemove", event => {
-                const description = document.querySelector(
-                    ".top .info .description"
-                );
-                const offset = -5 + (event.clientX / window.innerWidth) * 10;
-                description.style.transform = `translate(${offset}px, 0)`;
+                const body = document.querySelector("body");
+                const xOffset = 100 - (event.clientX / window.innerWidth) * 100;
+                const yOffset =
+                    100 - (event.clientY / window.innerHeight) * 100;
+                body.style.backgroundPositionX = `${xOffset *
+                    0.75}px, ${xOffset * 0.85}px, ${xOffset}px`;
+                body.style.backgroundPositionY = `${yOffset *
+                    0.75}px, ${yOffset * 0.85}px, ${yOffset}px`;
             });
         </script>
     </body>
