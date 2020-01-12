@@ -24,7 +24,7 @@
         <meta property="og:url" content="https://progison.team" />
         <meta property="og:site_name" content="progison.team" />
 
-        <meta name="theme-color" content="#350e5f">
+        <meta name="theme-color" content="#350e5f" />
 
         <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
@@ -64,8 +64,6 @@
 
             .info {
                 padding-bottom: 20px;
-                justify-self: center;
-                align-self: center;
             }
 
             .pt {
@@ -247,5 +245,15 @@
                 <span>spring-summer of 2020</span>!
             </div>
         </div>
+
+        <script>
+            window.addEventListener("mousemove", event => {
+                const description = document.querySelector(
+                    ".top .info .description"
+                );
+                const offset = -5 + (event.clientX / window.innerWidth) * 10;
+                description.style.transform = `translate(${offset}px, 0)`;
+            });
+        </script>
     </body>
 </html>
