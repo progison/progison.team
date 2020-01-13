@@ -55,7 +55,7 @@
                 background-position: -15px -5px, -15px -5px, -15px -5px;
             }
 
-            .top {
+            header.main {
                 color: #ffffff;
                 padding: 10px 0;
                 font-family: Righteous;
@@ -122,7 +122,6 @@
                 margin-left: 10px;
                 position: relative;
                 z-index: 0;
-                box-shadow: #110022 0 0 10px;
             }
 
             .contacts {
@@ -146,7 +145,7 @@
             .contacts a:focus {
                 display: block;
                 -webkit-tap-highlight-color: transparent;
-                outline: #ffe482 1px solid;
+                outline: #ffdd40 1px solid;
                 text-decoration: none;
                 transform: scale(1.15);
                 transition: all 0.4s;
@@ -164,7 +163,7 @@
                 display: none;
             }
 
-            .message {
+            .coming-soon {
                 margin: 20px auto;
                 margin-top: 50px;
                 padding: 10px 20px;
@@ -179,17 +178,18 @@
                 box-shadow: #110022 0 0 15px;
             }
 
-            .message header {
+            .coming-soon header {
                 font-weight: bold;
                 margin-bottom: 20px;
             }
 
-            .message span {
-                color: #ff6000;
+            .coming-soon mark {
+                background-color: #ffff00;
+                color: #110022;
             }
 
             @media (min-width: 600px) {
-                .top {
+                header.main {
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
@@ -197,13 +197,13 @@
             }
 
             @media (min-width: 321px) {
-                .message {
+                .coming-soon {
                     border-radius: 10px;
                 }
             }
 
             @media (min-height: 500px) {
-                .message {
+                .coming-soon {
                     position: fixed;
                     top: 50%;
                     left: 50%;
@@ -215,7 +215,7 @@
     </head>
 
     <body>
-        <div class="top">
+        <header class="main">
             <div class="info">
                 <div class="pt">
                     <a href="/"
@@ -229,24 +229,26 @@
 
             <div class="contacts">
                 <a target="_blank" href="https://t.me/progison">
-                    <img src="res/img/telegram_logo.svg" alt=""
+                    <img src="res/img/telegram_logo.svg" alt="Our channel in telegram"
                 /></a>
                 <a target="_blank" href="https://vk.com/progison">
-                    <img src="res/img/vk_logo.svg" alt=""
+                    <img src="res/img/vk_logo.svg" alt="Our group in vk"
                 /></a>
                 <a target="_blank" href="mailto:online24@progison.team">
-                    <img src="res/img/mail.svg" alt=""
+                    <img src="res/img/mail.svg" alt="Contact to us by email"
                 /></a>
             </div>
-        </div>
+        </header>
 
-        <div class="message">
-            <header>Our first project is coming soon!</header>
-            <div>
-                We are waiting for you in the
-                <span>spring-summer of 2020</span>!
-            </div>
-        </div>
+        <main>
+            <article class="coming-soon">
+                <header>Our first project is coming soon!</header>
+                <div>
+                    We are waiting for you in the
+                    <mark>spring-summer of 2020</mark>!
+                </div>
+            </article>
+        </main>
 
         <script>
             let sX, sY;
