@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/progison/progison.team/issues"
   },
-  "homepage": "https://github.com/progison/progison.team#readme"
+  "homepage": "https://github.com/progison/progison.team#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-real-favicon": "^0.3.2"
+  }
 }

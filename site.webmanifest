@@ -1,0 +1,53 @@
+{
+    "name": "Progison Team",
+    "short_name": "Progison Team",
+    "icons": [
+        {
+            "src": "/android-chrome-36x36.png?v=QEGR8p5LrY",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-48x48.png?v=QEGR8p5LrY",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-72x72.png?v=QEGR8p5LrY",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-96x96.png?v=QEGR8p5LrY",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-144x144.png?v=QEGR8p5LrY",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-192x192.png?v=QEGR8p5LrY",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png?v=QEGR8p5LrY",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-384x384.png?v=QEGR8p5LrY",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=QEGR8p5LrY",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#667799",
+    "background_color": "#667799"
+}
