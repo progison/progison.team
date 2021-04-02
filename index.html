@@ -1,4 +1,178 @@
-<!DOCTYPE html><html lang="en">    <head>        <title>Progison Team</title>        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">        <meta charset="utf-8">        <!-- Open Graph -->        <meta property="og:locale" content="en">        <meta property="og:type" content="article">        <meta property="og:title" content="Progison Team">        <meta property="og:description" content="Web, game & software development">        <meta property="og:url" content="https://progison.team">        <meta property="og:site_name" content="progison.team">        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">        <style>            html {                width: 100%;                min-height: 100%;            }            body {                margin: 0;                min-width: 320px;                width: 100%;                min-height: 100%;                font-family: "Roboto", sans-serif;                background-color: #2d2d2d;                font-size: 16px;                background-image: url(res/img/bg_pattern1.svg),                    url(res/img/bg_pattern2.svg), url(res/img/bg_pattern3.svg);                background-size: 100px, 100px, 100px;                background-position: 0px 0px, 0px 0px, 0px 0px;            }            header.main {                color: #ffffff;                padding: 10px 0;                font-family: Righteous;                display: flex;                flex-direction: column;                align-items: center;            }            .info {                padding-bottom: 20px;            }            .pt {                font-size: 40px;                width: max-content;                position: relative;                z-index: 1;                margin-left: -5px;            }            .pt a {                padding: 0 5px;                font-size: 40px;                width: max-content;                position: relative;                z-index: 1;                color: #ffffff;                text-decoration: none;                -webkit-tap-highlight-color: transparent;                outline: transparent 0px solid;                display: block;                transition: all 0.4s;            }            .pt a:hover,            .pt a:active,            .pt a:focus {                padding: 0 5px;                font-size: 40px;                width: max-content;                position: relative;                z-index: 1;                color: #ffffff;                text-decoration: none;                -webkit-tap-highlight-color: transparent;                outline: #ffffff 1px solid;                display: block;                transform: scale(1.04);                transition: all 0.4s;            }            .pt img {                width: 16px;                height: 16px;                vertical-align: super;            }            .description {                background-color: #ffdd40;                color: #2d2d2d;                width: max-content;                padding: 0 5px;                margin-top: -5px;                margin-left: 10px;                position: relative;                z-index: 0;            }            .contacts {                display: flex;                flex-direction: row;                justify-content: space-between;                width: 140px;                border-radius: 5px;            }            .contacts a {                display: block;                -webkit-tap-highlight-color: transparent;                outline: transparent 0px solid;                text-decoration: none;                transition: all 0.4s;            }            .contacts a:hover,            .contacts a:active,            .contacts a:focus {                display: block;                -webkit-tap-highlight-color: transparent;                outline: #ffdd40 1px solid;                text-decoration: none;                transform: scale(1.15);                transition: all 0.4s;                border-radius: 5px;            }            .contacts img {                width: 40px;                height: 40px;                display: block;                border-radius: 5px;            }            .tooltip {                display: none;            }            .coming-soon {                margin: 20px auto;                margin-top: 50px;                padding: 10px 20px;                padding-bottom: 20px;                background-color: #111111;                color: #ffffff;                text-align: center;                font-size: 18px;                width: 100%;                max-width: 320px;                box-sizing: border-box;                box-shadow: #111111 0 0 15px;            }            .coming-soon header {                font-weight: bold;                margin-bottom: 20px;            }            .coming-soon mark {                background-color: #0ebeff;                color: #111111;            }            @media (min-width: 600px) {                header.main {                    flex-direction: row;                    justify-content: space-around;                    align-items: center;                }            }            @media (min-width: 321px) {                .coming-soon {                    border-radius: 10px;                }            }            @media (min-height: 500px) {                .coming-soon {                    position: fixed;                    top: 50%;                    left: 50%;                    transform: translate(-50%, -50%);                    margin-top: 0;                }            }        </style>    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=QEGR8p5LrY">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Progison Team</title>
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+        <meta charset="utf-8">
+      <meta name="yandex-verification" content="7b0637b097245365" />
+        <!-- Open Graph -->
+        <meta property="og:locale" content="en">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Progison Team">
+        <meta property="og:description" content="Web, game & software development">
+        <meta property="og:url" content="https://progison.team">
+        <meta property="og:site_name" content="progison.team">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <style>
+            html {
+                width: 100%;
+                min-height: 100%;
+            }
+            body {
+                margin: 0;
+                min-width: 320px;
+                width: 100%;
+                min-height: 100%;
+                font-family: "Roboto", sans-serif;
+                background-color: #2d2d2d;
+                font-size: 16px;
+                background-image: url(res/img/bg_pattern1.svg),
+                    url(res/img/bg_pattern2.svg), url(res/img/bg_pattern3.svg);
+                background-size: 100px, 100px, 100px;
+                background-position: 0px 0px, 0px 0px, 0px 0px;
+            }
+            header.main {
+                color: #ffffff;
+                padding: 10px 0;
+                font-family: Righteous;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .info {
+                padding-bottom: 20px;
+            }
+            .pt {
+                font-size: 40px;
+                width: max-content;
+                position: relative;
+                z-index: 1;
+                margin-left: -5px;
+            }
+            .pt a {
+                padding: 0 5px;
+                font-size: 40px;
+                width: max-content;
+                position: relative;
+                z-index: 1;
+                color: #ffffff;
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                outline: transparent 0px solid;
+                display: block;
+                transition: all 0.4s;
+            }
+            .pt a:hover,
+            .pt a:active,
+            .pt a:focus {
+                padding: 0 5px;
+                font-size: 40px;
+                width: max-content;
+                position: relative;
+                z-index: 1;
+                color: #ffffff;
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                outline: #ffffff 1px solid;
+                display: block;
+                transform: scale(1.04);
+                transition: all 0.4s;
+            }
+            .pt img {
+                width: 16px;
+                height: 16px;
+                vertical-align: super;
+            }
+            .description {
+                background-color: #ffdd40;
+                color: #2d2d2d;
+                width: max-content;
+                padding: 0 5px;
+                margin-top: -5px;
+                margin-left: 10px;
+                position: relative;
+                z-index: 0;
+            }
+            .contacts {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 140px;
+                border-radius: 5px;
+            }
+            .contacts a {
+                display: block;
+                -webkit-tap-highlight-color: transparent;
+                outline: transparent 0px solid;
+                text-decoration: none;
+                transition: all 0.4s;
+            }
+            .contacts a:hover,
+            .contacts a:active,
+            .contacts a:focus {
+                display: block;
+                -webkit-tap-highlight-color: transparent;
+                outline: #ffdd40 1px solid;
+                text-decoration: none;
+                transform: scale(1.15);
+                transition: all 0.4s;
+                border-radius: 5px;
+            }
+            .contacts img {
+                width: 40px;
+                height: 40px;
+                display: block;
+                border-radius: 5px;
+            }
+            .tooltip {
+                display: none;
+            }
+            .coming-soon {
+                margin: 20px auto;
+                margin-top: 50px;
+                padding: 10px 20px;
+                padding-bottom: 20px;
+                background-color: #111111;
+                color: #ffffff;
+                text-align: center;
+                font-size: 18px;
+                width: 100%;
+                max-width: 320px;
+                box-sizing: border-box;
+                box-shadow: #111111 0 0 15px;
+            }
+            .coming-soon header {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .coming-soon mark {
+                background-color: #0ebeff;
+                color: #111111;
+            }
+            @media (min-width: 600px) {
+                header.main {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            @media (min-width: 321px) {
+                .coming-soon {
+                    border-radius: 10px;
+                }
+            }
+            @media (min-height: 500px) {
+                .coming-soon {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    margin-top: 0;
+                }
+            }
+        </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=QEGR8p5LrY">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=QEGR8p5LrY">
 <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=QEGR8p5LrY">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=QEGR8p5LrY">
@@ -7,4 +181,64 @@
 <link rel="shortcut icon" href="/favicon.ico?v=QEGR8p5LrY">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=QEGR8p5LrY">
-<meta name="theme-color" content="#ffffff"></head>    <body>        <header class="main">            <div class="info">                <div class="pt">                    <a href="/">Progison Team<img src="/res/img/pt_white_logo.svg" alt></a>                </div>                <div class="description">Web, game & software development</div>            </div>            <div class="contacts">                <a target="_blank" href="https://t.me/progison">                    <img src="res/img/telegram_logo.svg" alt="Our channel in telegram"></a>                <a target="_blank" href="https://vk.com/progison">                    <img src="res/img/vk_logo.svg" alt="Our group in vk"></a>                <a target="_blank" href="mailto:online24@progison.team">                    <img src="res/img/mail.svg" alt="Contact to us by email"></a>            </div>        </header>        <main>            <article class="coming-soon">                <header>Our first project is coming soon!</header>                <div>                    We are waiting for you in the                    <mark>spring-summer of 2020</mark>!                </div>            </article>        </main>        <script>            let sX, sY;            let sXOffset = 0,                sYOffset = 0;            let lastXOffset = 0,                lastYOffset = 0;            document                .querySelector("html")                .addEventListener("mouseleave", event => {                    sX = null;                    sY = null;                    sXOffset = lastXOffset;                    sYOffset = lastYOffset;                });            window.addEventListener("mousemove", event => {                if (null == sX) {                    sX = event.clientX;                    sY = event.clientY;                }                const body = document.querySelector("body");                const xOffset =                    sXOffset + ((sX - event.clientX) / window.innerWidth) * 50;                const yOffset =                    sYOffset + ((sY - event.clientY) / window.innerHeight) * 50;                body.style.backgroundPositionX = `${xOffset}px, ${xOffset *                    0.85}px, ${xOffset * 0.75}px`;                body.style.backgroundPositionY = `${yOffset}px, ${yOffset *                    0.85}px, ${yOffset * 0.75}px`;                lastXOffset = xOffset;                lastYOffset = yOffset;            });        </script>    </body></html>
+<meta name="theme-color" content="#ffffff"></head>
+    <body>
+        <header class="main">
+            <div class="info">
+                <div class="pt">
+                    <a href="/">Progison Team<img src="/res/img/pt_white_logo.svg" alt></a>
+                </div>
+                <div class="description">Web, game & software development</div>
+            </div>
+            <div class="contacts">
+                <a target="_blank" href="https://t.me/progison">
+                    <img src="res/img/telegram_logo.svg" alt="Our channel in telegram"></a>
+                <a target="_blank" href="https://vk.com/progison">
+                    <img src="res/img/vk_logo.svg" alt="Our group in vk"></a>
+                <a target="_blank" href="mailto:online24@progison.team">
+                    <img src="res/img/mail.svg" alt="Contact to us by email"></a>
+            </div>
+        </header>
+        <main>
+            <article class="coming-soon">
+                <header>Our first project is coming soon!</header>
+                <div>
+                    We are waiting for you in the
+                    <mark>spring-summer of 2020</mark>!
+                </div>
+            </article>
+        </main>
+        <script>
+            let sX, sY;
+            let sXOffset = 0,
+                sYOffset = 0;
+            let lastXOffset = 0,
+                lastYOffset = 0;
+            document
+                .querySelector("html")
+                .addEventListener("mouseleave", event => {
+                    sX = null;
+                    sY = null;
+                    sXOffset = lastXOffset;
+                    sYOffset = lastYOffset;
+                });
+            window.addEventListener("mousemove", event => {
+                if (null == sX) {
+                    sX = event.clientX;
+                    sY = event.clientY;
+                }
+                const body = document.querySelector("body");
+                const xOffset =
+                    sXOffset + ((sX - event.clientX) / window.innerWidth) * 50;
+                const yOffset =
+                    sYOffset + ((sY - event.clientY) / window.innerHeight) * 50;
+                body.style.backgroundPositionX = `${xOffset}px, ${xOffset *
+                    0.85}px, ${xOffset * 0.75}px`;
+                body.style.backgroundPositionY = `${yOffset}px, ${yOffset *
+                    0.85}px, ${yOffset * 0.75}px`;
+                lastXOffset = xOffset;
+                lastYOffset = yOffset;
+            });
+        </script>
+    </body>
+</html>
